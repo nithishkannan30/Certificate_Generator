@@ -1,0 +1,39 @@
+.templatemain{
+    /* background-image: url('../../images/img5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;     */
+    background-color:black ;
+}
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.templatemain img{
+    width: 200px;
+    height:200px;
+    margin: 20px;
+}
+.templatemain h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+.li{
+    border: 2px solid white;
+    border-radius:5px ;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.li button{
+    margin:10px;
+    width: 80%;
+    margin-left: 10%;
+    cursor: pointer;
+    background-color: rgb(40, 40, 180);
+    color:white;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
