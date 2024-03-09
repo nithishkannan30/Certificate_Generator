@@ -1,8 +1,7 @@
-import React, { useState,useReducer } from 'react'
-import styles from '../assets/styles/certificateGenrator.module.scss'
-import Model from '../components/Model';
-import Certificate from '../view/Certificate';
-import Certificate3 from '../view/Certificate3';
+import React, { useState,useReducer,useContext } from 'react'
+import { useNavigate } from 'react-router-dom';
+import styles from "../assets/styles/certificateGenerator.module.scss"
+import { GlobalText } from '../context/DataText';
 const  initialState={
   name:'Nithish',
   course:'Data structure',
@@ -18,6 +17,8 @@ const reducer=(state,action)=>{
   }
 }
 const CertificateGenerator = () => {
+  const {setFormData} = useContext(GlobalText)
+  const navigate =useNavigate()
   const[isOpenModel,setIsOpenModel]=useState(false);
   const[formState,dispatch]=useReducer(reducer,initialState)
     const handleSubmitForm=e=>{
@@ -26,13 +27,17 @@ const CertificateGenerator = () => {
         if(name && course && date && signature){
         console.log('form submitted');
         setIsOpenModel(true);
+        setFormData(formState)
+        navigate('/options', { state: { formData: formState } });
+
         }else{
           alert('Please fill all details')
         }
     }
-    const handleTextChange=()=>{
-            dispatch({type:'TEXT_CHANGE',field:e.target.name,payload:e.target.value})
-    }
+    const handleTextChange = (e) => {
+      dispatch({type:'TEXT_CHANGE', field: e.target.name, payload: e.target.value})
+  }
+  
   return (
     <>
     <div className={styles.wrapper}>
@@ -54,14 +59,15 @@ const CertificateGenerator = () => {
             <label htmlFor='signature'>Signature</label>
             <input type='text' name='signature' value={formState.signature} id='signature' onChange={handleTextChange}/>
         </div>
-        <button type='submit'>Generate certificate</button>
+     <button type='submit'>Generate certificate</button>
       </form>
     </div>
     </div>
-    <Model isOpen={isOpenModel} handleClose={()=>setIsOpenModel(false)}>
-      <Certificate3 {...formState}/>
-    </Model>
 
+
+
+      
+    
     </>
   )
 }

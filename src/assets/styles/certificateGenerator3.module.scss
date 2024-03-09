@@ -1,16 +1,26 @@
+
+.fullWrapper{
+    width: 100vw;
+    background: #000;
+    height: 100vh;
+}
 .certificateWrapper {
-    background-color: #f8f8f8;
+    // margin-top: 10%;
+    z-index: 10;
+    background-color: #0c0b0b;
      /* Light background color */
     padding: 2rem;
     color: #333; /* Dark text color */
     width: 1000px;
+    margin: auto;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    // box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     .certificateContainer {
         // border: 2px solid gold;
         background-color: #fff;
-        background-image: url('../../../templateimages/img2.png');
+        // background-image: url('../../../templateimages/img2.png');
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 2rem;

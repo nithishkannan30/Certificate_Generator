@@ -1,9 +1,18 @@
-import React, { useRef } from 'react'
+import React, { useRef,useContext } from 'react'
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import styles from '../assets/styles/certificateGenrator.module.scss'
-const Certificate = ({name,course,date,signature}) => {
+import styles from '../assets/styles/certificateGenerator3.module.scss'
+import { GlobalText } from '../context/DataText';
+// ./templateimages/img1.png
+
+
+const Certificate = () => {
   const certificateRef=useRef(null);
+    const {form_Data,imgData} = useContext(GlobalText)
+   const{name,course,signature,date}=form_Data;
+const divStyle = {
+    backgroundImage: `url(../.${imgData})`,
+  };
   const handleDownloadCertificate = async () => {
     alert('Downloading...');
     
@@ -17,30 +26,31 @@ const Certificate = ({name,course,date,signature}) => {
       console.error('Error capturing certificate:', error);
     }
   };
-  
+  console.log(form_Data)
   return (
-    <>
-      <div className={styles.certificateWrapper}>
-        <div className={styles.certificateContainer} ref={certificateRef}>
+    <div className={styles.fullWrapper}>
+      
+       <div className={styles.certificateWrapper}>
+        <div className={styles.certificateContainer} style={divStyle} ref={certificateRef}>
             <div>Logo here</div>
-            <h1>CERTIFICATE OF APPRECIATION</h1>
+            <h1>CERTIFICATE <span className={styles.span}> OF APPRECIATION</span> </h1>
             <span className={styles.smallText}>This certificate is proudly awarded to </span>
-            <p className={styles.primaryItalicText}>{name}</p>
-            <span className={styles.smallText}>for successfully completing the course</span>
+            <p className={styles.primaryItalicText} contentEditable={true}>{name}</p>
+            <span className={styles.smallText} contentEditable={true}>for successfully completing the course</span>
             <h2>{course}</h2>
-            <span className={styles.smallText}>
+            <span className={styles.smallText} contentEditable={true}>
                 {`conducted on ${date}`}
             </span>
             <div className={styles.signatureBlock}>
-                <img className={styles.signatureImage} src={signature.preview} alt=''></img>
+               
                 <span className={styles.horizontalBar}></span>
                 <span className={styles.smallText}>{signature}</span>
             </div>
         </div>
-        <button style={{marginTop:'3rem'}} onClick={handleDownloadCertificate}>DOWNLOAD PDF</button>
-    </div>
+       {!name.includes(',')?<button style={{marginTop:'3rem'}} onClick={handleDownloadCertificate}>DOWNLOAD PDF</button>:null}
+    </div> 
   
-    </>
+    </div>
   )
 }
 

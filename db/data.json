@@ -1,16 +1,26 @@
 {
-"data":[
-    { "id": 1, "images": "./images/img1.jpg", "route":"..view/Certificate" },
-    { "id": 2, "images": "./images/img2.jpg","route":"certificate2.jsx"  },
-    { "id": 3, "images": "./images/img3.jpg","route":"certificate3.jsx"  },
-    { "id": 4, "images": "./images/img4.jpg","route":"certificate4.jsx"  },
-    { "id": 5, "images": "./images/img5.jpg","route":"certificate5.jsx"  },
-    { "id": 6, "images": "./images/img6.jpg","route":"certificate6.jsx"  },
-    { "id": 7, "images": "./images/img7.jpg","route":"certificate7.jsx"  },
-    { "id": 8, "images": "./images/img8.jpg","route":"certificate8.jsx"  },
-    { "id": 9, "images": "./images/img9.jpg","route":"certificate9.jsx"  },
-    { "id": 10, "images": "./images/img10.jpg","route":"certificate10.jsx"  },
-    { "id": 11, "images": "./images/img11.png","route":"certificate11.jsx"  }
-
-]
-}
+    "data": [
+      { "id": 1, "images": "./templateimages/img1.png" },
+      { "id": 2, "images": "./templateimages/img2.png" },
+      { "id": 3, "images": "./templateimages/img3.png" },
+      { "id": 4, "images": "./templateimages/img4.png" },
+      { "id": 5, "images": "./templateimages/img5.png" },
+      { "id": 6, "images": "./templateimages/img6.png" },
+      { "id": 7, "images": "./templateimages/img7.png" },
+      { "id": 8, "images": "./templateimages/img8.png" },
+      { "id": 9, "images": "./templateimages/img9.png" },
+      { "id": 10, "images": "./templateimages/img10.png" },
+      { "id": 11, "images": "./templateimages/img11.png" },
+      { "id": 12, "images": "./templateimages/img12.png" },
+      { "id": 13, "images": "./templateimages/img13.png" },
+      { "id": 14, "images": "./templateimages/img14.png" },
+      { "id": 15, "images": "./templateimages/img15.png" },
+      { "id": 16, "images": "./templateimages/img16.png" },
+      { "id": 17, "images": "./templateimages/img17.png" },
+      { "id": 18, "images": "./templateimages/img18.png" },
+      { "id": 19, "images": "./templateimages/img19.png" },
+      { "id": 20, "images": "./templateimages/img20.png" },
+      { "id": 21, "images": "./templateimages/img21.png" }
+    ]
+  }
+  

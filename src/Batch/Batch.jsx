@@ -1,8 +1,6 @@
 import React, { useState,useReducer,useRef } from 'react'
-import styles from '../assets/styles/certificateGenrator.module.scss'
+import styles from "../assets/styles/certificateGenerator.module.scss"
 import Model from '../components/Model';
-import Certificate from '../view/Certificate';
-import Certificate3 from '../view/Certificate3';
 import './BAtch.css';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';

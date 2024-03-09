@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 30px;
+    width: 100vw;
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container img{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+}
+.template{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.template h2{
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+.title{
+    background-color: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title h1{
+    position: relative;
+    bottom: -20px;
+}
