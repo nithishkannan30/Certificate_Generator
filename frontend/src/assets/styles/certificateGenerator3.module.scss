@@ -1,0 +1,168 @@
+.Pace{
+    padding: 5px 80px;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+  }
+  .fullWrapper{
+      width: 97vw;
+      background:white;
+      height: 100vh;
+      margin-top: 25px;
+     
+  }
+  .certificateWrapper {
+      margin-top: 20px;
+      z-index: 10;
+      background-color: #0c0b0b;
+       /* Light background color */
+      padding: 2rem;
+      color: #333; /* Dark text color */
+      width: 1000px;
+      margin: auto;
+      text-align: center;
+      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+      .certificateContainer {
+          // border: 2px solid gold;
+          background-color: #fff;
+          // background-image: url('../../../templateimages/img2.png');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding: 2rem;
+          display: flex;
+          flex-direction: column;
+          border-radius: 10px; /* Rounded corners */
+          height: 650px;
+  
+          .smallText {
+              font-size: 1rem;
+              color: #777; /* Dimmed text color */
+          }
+  
+          .primaryItalicText {
+              color: #e44d26; /* Attractive color */
+              font-size: 3.5rem;
+              font-weight: 700;
+              font-style: italic;
+              margin-block: 1rem;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for emphasis */
+          }
+  
+          .signatureBlock {
+              margin-top: 3rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+           
+  
+              .signatureImage {
+                  height: 100px;
+                  width: 150px;
+                  margin-bottom: 10px;
+                  border-radius: 50%; /* Round the signature image */
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+              }
+  
+              // .horizontalBar {
+              //     height: 1px;
+              //     width: 50%;
+              //     background-color: #000;
+              //     margin: 1rem 0;
+              // }
+          }
+      }
+  
+      button {
+          border: 2px solid #e44d26;
+          background-color: #e44d26;
+          color: #fff;
+          width: 100%;
+          outline: none;
+          padding: 1rem 1.5rem;.controls {
+              margin-top: 2rem;
+              display: flex;
+              gap: 2rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+            
+            .selectGroup {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.4rem;
+              font-weight: 500;
+            }
+            
+            .select {
+              padding: 0.5rem 0.8rem;
+              border-radius: 8px;
+              border: 1px solid #ccc;
+              font-size: 1rem;
+              background-color: #fff;
+              min-width: 150px;
+            }
+            
+            .downloadBtn {
+              display: block;
+              margin: 2rem auto 0 auto;
+              padding: 0.8rem 2rem;
+              background-color: #4a90e2;
+              color: white;
+              font-weight: bold;
+              font-size: 1rem;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            
+              &:hover {
+                background-color: #357bd8;
+              }
+            }
+            
+          font-size: 16px;
+          border-radius: 5px; /* Rounded button corners */
+          transition: all 300ms ease;
+          cursor: pointer;
+  
+          &:hover {
+              background-color: #fff;
+              color: #e44d26;
+          }
+      }
+  }
+  
+  .controls {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      ;
+      
+    }
+    
+    .selectGroup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    
+    .select {
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background-color: #fff;
+      min-width: 150px;
+    }
+    
+  
+    
